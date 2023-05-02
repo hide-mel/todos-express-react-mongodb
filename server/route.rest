@@ -1,0 +1,35 @@
+GET http://localhost:5001/todos
+
+###
+
+#GET http://localhost:5001/todos/644ffc522bfbbaa671723bb3
+
+###
+POST http://localhost:5001/todos/
+Content-Type: application/json
+
+{
+    "id": "idsosfdfds",
+    "name": "shinzo",
+    "complete": true
+}
+
+###
+DELETE http://localhost:5001/todos/644ffc522bfbbaa671723bb3
+
+###
+DELETE http://localhost:5001/todos/
+Content-Type: application/json
+
+{
+    "ids": ["soso","idsosfd"]
+}
+
+###
+PATCH http://localhost:5001/todos/f5ce6148-7e44-4d6b-a012-868281a2d698
+Content-Type: application/json
+
+{
+    "complete": true
+}
+

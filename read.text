@@ -1,0 +1,40 @@
+cd server
+npm init -y
+touch index.js
+npm i express
+npm i nodemon -D
+in package.json edit "script": {"start": "node server", "dev":"nodemon server"}
+
+(for mongodb)
+npm i mongoose
+npm i dotenv
+
+cd client
+npx create-react-app .
+
+
+to run with nodemon, run with "npm run dev"
+
+
+In server's index js 
+Const express = require('express')
+Const app = express()
+
+App.get("/api", (req, res) => {res.json({"users": ["user1", "user2","user3"]})})
+
+app.listen(5000, () => {console.log("server started on port 5000")})
+
+
+
+
+
+In package.json in frontend
+Add "proxy": "http://localhost:5000" after "version"
+
+In app.js in frontend
+
+Import {useEffect, useState} from 'react'
+
+In App(){}
+
+Const [backendData]
