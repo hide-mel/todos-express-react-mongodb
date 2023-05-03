@@ -5,3 +5,4 @@
  - nodemon
  - mongoose
  - dotenv
+ - cors
